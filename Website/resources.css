@@ -27,6 +27,10 @@ body {
   color: black;
 }
 
+body {
+  background-image: linear-gradient(to right,	#004777, #2a5d88, #467398, #618aa9, #7da1ba);
+}
+
 h1 {
   text-align: center;
   font-family: Helvetica-Neue;
