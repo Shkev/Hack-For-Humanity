@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ url_for('static', filename='resources.css')}}"/>
+    <title>Resources</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('events') }}">Events</a>
+      <a class="active" href="{{ url_for('resources') }}">Resources</a>
+    </div>
+    <h1>Resources</h1>
+    <a href="https://vvsd.net/vvsd-programs/housing/"><h2>Veterans Village of San Diego</h2></a>
+    <h3>Host: Veterans Village of San Diego</h3>
+    <h3>Location: San Diego, CA</h3>
+    <h3>Category: Housing</h3>
+    <img src="{{ url_for('static', filename='vvsd.jpg')}}" style="width:50%; text-align:center">
+
+    <br>
+    <br>
+    <a href="https://www.able2work.org/programs/vetworks/"><h2>VetWorks</h2></a>
+    <h3>Host: Able-Disabled Advocacy</h3>
+    <h3>Location: San Diego, CA</h3>
+    <h3>Category: Job Finding</h3>
+    <img src="{{ url_for('static', filename='abledisable.png')}}" style="width:0.001%">
+
+    <br>
+    <br>
+    <a href="https://childcaresandiego.com"><h2>Child Care San Diego</h2></a>
+    <h3>Host: Child Care San Diego</h3>
+    <h3>Location: San Diego, CA</h3>
+    <h3>Category: Child Care</h3>
+    <img src="{{ url_for('static', filename='Veteran_Child_Care.jpg')}}">
+
+    <br>
+    <br>
+    <a href="https://sandiegofoodbank.org/donate/more-ways-to-give/programs-initiatives/"><h2>San Diego Food Bank</h2></a>
+    <h3>Host: San Diego Food Bank</h3>
+    <h3>Location: San Diego, CA</h3>
+    <h3>Category: Food Donating</h3>
+    <img src="{{ url_for('static', filename='foodbank.png')}}" style="width:0.001%">
+
+    <br>
+    <br>
+    <a href="https://www.sandiego.va.gov/services/Community_Care_for_Veterans.asp"><h2>VA San Diego Healthcare System</h2></a>
+    <h3>Host: U.S. Department of Veterans Affairs</h3>
+    <h3>Location: San Diego, CA</h3>
+    <h3>Category: Community Care</h3>
+    <img href="{{ url_for('static', filename='veteransaffairs.png')}}" style="width:0.001%">
+    <div style="padding-left:16px">
+    </div>
+  </body>
+</html>

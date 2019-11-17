@@ -1,0 +1,267 @@
+* {box-sizing: border-box;}
+ul {list-style-type: none;}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #004777, #2a5d88, #467398, #618aa9, #7da1ba);
+}
+a { text-decoration: none;}
+
+h3 {
+    color: white;
+}
+
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  /* background: #1abc9c; */
+  background: linear-gradient(to right, #004777, #2a5d88, #467398, #618aa9, #7da1ba);
+  text-align: center;
+}
+
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+.days li .active {
+  padding: 5px;
+  /* background: #1abc9c; */
+  background: #7da1ba;
+  color: white !important
+}
+
+
+/* Add media queries for smaller screens */
+@media screen and (max-width:720px) {
+  .weekdays li, .days li {width: 13.1%;}
+}
+
+@media screen and (max-width: 420px) {
+  .weekdays li, .days li {width: 12.5%;}
+  .days li .active {padding: 2px;}
+}
+
+@media screen and (max-width: 290px) {
+  .weekdays li, .days li {width: 12.2%;}
+}
+
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #ff0;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 60%;
+  max-height: 80%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popup .close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popup .close:hover {
+  color: #06D85F;
+}
+
+.popup .content {
+  margin-top: 2px;
+  width: 100%;
+  max-height: 30%;
+  border: 1.5px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.popup .person {
+  width: 100%;
+  max-height: 50%;
+  border: 1.5px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+
+
+.popups {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 80%;
+  height: auto;
+  position: relative;
+}
+
+.popups h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+
+.popups .close {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+
+.popups .close:hover {
+  color: #06D85F;
+}
+
+.popups .content {
+  margin-top: 2px;
+  width: 100%;
+  max-height: 30%;
+  border: 1.5px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+.popups .person {
+  width: 100%;
+  max-height: 50%;
+  border: 1.5px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  overflow: auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #004777;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #004777;
+}
+
+.topnav a.activea {
+  background-color: #FFEC63;
+  color: black;
+}

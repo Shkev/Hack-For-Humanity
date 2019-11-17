@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{{ url_for('static', filename='events.css') }}">
+    </head>
+    <body>
+        <div class="topnav">
+          <a href="{{ url_for('index') }}">Home</a>
+          <a class="activea" href="{{ url_for('events') }}">Events</a>
+          <a href="{{ url_for('resources') }}">Resources</a>
+        </div>
+
+        <h3>Location: <input type="text" minlength="2" maxlength="20" value=""> <button type="button" name="button">submit</button> </h3>
+        <h3>Distance: <select>
+          <option value="near"> < 1k miles </option>
+          <option value="medium"> 1k miles - 50k miles </option>
+          <option value="far"> > 50k miles </option>
+        </select></h3>
+        <h3>Topic: <button>Coding Workshop</button>&nbsp;<button>Mentorship</button>&nbsp;<button>Job Search</button>&nbsp;<button>Activity</button>
+        </h3>
+        <button type="button" name="button" style="float: right;">Post Your Event</button>
+        <br>
+        <br>
+
+        <div style="max-width:100vw">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>
+                November<br>
+                <span style="font-size:18px">2019</span>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+
+          <ul class="days">
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li> </li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li><span class="active"><a href="#popup1">17</a></span></li>
+
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+          </ul>
+        </div>
+        <br>
+        <div style="text-align: center;">
+            <img src="{{ url_for('static', filename='map.jpg') }}" alt="map">
+        </div>
+
+        <!-- start -->
+
+          <div id="popup1" class="overlay">
+              <br>
+              <div class="popup">
+                  <h2>Events on 11/17</h2>
+                  <a class="close" href="#">&times;</a>
+                  <div class="content">
+                      <div class="container">
+                          <span><b>Veterans Housing and Homelessness Prevention Program Workshop</b></span>
+                          <span><i>Housing</i></span>
+                      </div>
+                      <div style="font-size:80%">
+                        8:00am - 9am
+                      </div>
+                      <div style="font-size:80%">
+                        3701 Voltaire Street
+                      </div>
+                      <div style="font-size:80%">
+                        <a href="#popup11">View Details</a>
+                      </div>
+                  </div>
+
+                  <div class="content">
+                      <div class="container">
+                          <span><b>California Transition Assistance Program Mesa College</b></span>
+                          <span><i>Transition</i></span>
+                      </div>
+                      <div style="font-size:80%">
+                        10am - 11am
+                      </div>
+                      <div style="font-size:80%">
+                        Mesa College,7250 Mesa College Dr MC211
+                      </div>
+                      <div style="font-size:80%">
+                        <a href="#popup12">View Details</a>
+                      </div>
+                  </div>
+
+                  <div class="content">
+                      <div class="container">
+                          <span><b>Dance for Vets</b></span>
+                          <span><i>Activity</i></span>
+                      </div>
+                      <div style="font-size:80%">
+                        8pm - 11pm
+                      </div>
+                      <div style="font-size:80%">
+                        The Rail,3796 Fifth Avenue
+                      </div>
+                      <div style="font-size:80%">
+                        <a href="#popup13">View Details</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div id="popup11" class="overlay">
+              <div class="popups">
+                  <a class="close" href="#popup1">&times;</a>
+                  <h2>Veterans Housing and Homelessness Prevention Program Workshop</h2>
+                  <div class="person">
+                      <div>
+                          <b>Info</b>
+                      </div>
+                      <br>
+                      <div>Organization: <a href="https://www.hcd.ca.gov/">California Department of Housing and Community Development</a></div>
+                      <div>
+                          <p>VHHP finances the development of affordable rental and transitional housing for veterans with an emphasis on housing for veterans experiencing homelessness and extremely low-income veterans. The program is administered by HCD in collaboration with the California Department of Veterans Affairs (CalVet) and Housing Financing Agency (CalHFA). </p>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="person">
+                      <div>
+                          <b>Event Attendees</b>
+                      </div>
+                      <div class="container">
+                          <span>April</span>
+                          <span>616-345-6266</span>
+                          <span>april00@gmail.com</span>
+                      </div>
+                      <div class="container">
+                          <span>Mike</span>
+                          <span>222-345-4562</span>
+                          <span>mike01@gmail.com</span>
+                      </div>
+                      <div class="container">
+                          <span>Lisa</span>
+                          <span>555-980-4562</span>
+                          <span>lisa002@gmail.com</span>
+                      </div>
+                      <div class="container">
+                          <span>Amanda</span>
+                          <span>456-234-9763</span>
+                          <span>amanda002@gmail.com</span>
+                      </div>
+                      <div class="container">
+                          <span>Ellen</span>
+                          <span>334-555-9963</span>
+                          <span>ellen002@gmail.com</span>
+                      </div>
+                  </div>
+                  <br>
+                  <div class="person">
+                      <div>
+                          <b>Comments</b>
+                      </div>
+                      <div>
+                          Lisa: Are we going there by bus?
+                          <br>
+                          Ellen: I have a car, and I can pick you guys up.
+                          <br>
+                          Amanda: Hey, Lisa, I took a look at your profile and it says that you were stationed to 32nd Street in 2003? So was I!!!
+                          <br>
+                          Lisa: I was stationed to Port Ops back in 2003! Wow what a small world.
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+
+      <div id="popup12" class="overlay">
+          <div class="popups">
+              <a class="close" href="#popup1">&times;</a>
+              <h2>California Transition Assistance Program Mesa College</h2>
+              <div class="person">
+                  <div>
+                      <b>Info</b>
+                  </div>
+                  <br>
+                  <div>Organization: <a href="https://www.calvet.ca.gov/VetServices/Pages/California-Transition-Assistance-Program.aspx">California Transition Assistance Program (CalTAP)</a></div>
+                  <div>
+                    </p> WALK-INS WELCOME! <br>
+                    The California Department of Veterans Affairs---California Transition Assistance Program (CalTAP) offers a full array of transition assistance and
+                    serves to connect Veterans, Service Members, and their families with California specific resources geared to ensure a successful transition into
+                    civilian life. CalTAP would like to invite student veterans to attend our upcoming seminar which will highlight benefits and services available to
+                    veterans and their family members.</p>
+                  </div>
+              </div>
+              <br>
+              <div class="person">
+                  <div>
+                      <b>Event Attendees</b>
+                  </div>
+                  <div class="container">
+                      <span>April</span>
+                      <span>616-345-6266</span>
+                      <span>april00@gmail.com</span>
+                  </div>
+                  <div class="container">
+                      <span>Mike</span>
+                      <span>222-345-4562</span>
+                      <span>mike01@gmail.com</span>
+                  </div>
+                  <div class="container">
+                      <span>Lisa</span>
+                      <span>555-980-4562</span>
+                      <span>lisa002@gmail.com</span>
+                  </div>
+                  <div class="container">
+                      <span>Amanda</span>
+                      <span>456-234-9763</span>
+                      <span>amanda002@gmail.com</span>
+                  </div>
+                  <div class="container">
+                      <span>Ellen</span>
+                      <span>334-555-9963</span>
+                      <span>ellen002@gmail.com</span>
+                  </div>
+              </div>
+              <br>
+              <div class="person">
+                  <div>
+                      <b>Comments</b>
+                  </div>
+                  <div>
+                      Lisa: Are we going there by bus?
+                      <br>
+                      Ellen: I have a car, and I can pick you guys up.
+                      <br>
+                      Amanda: Hey, Lisa, I took a look at your profile and it says that you were stationed to 32nd Street in 2003? So was I!!!
+                      <br>
+                      Lisa: I was stationed to Port Ops back in 2003! Wow what a small world.
+                  </div>
+              </div>
+          </div>
+      </div>
+
+      <div id="popup13" class="overlay">
+      <div class="popups">
+          <a class="close" href="#popup1">&times;</a>
+          <h2>Dance for Vets</h2>
+          <div class="person">
+              <div>
+                  <b>Info</b>
+              </div>
+              <br>
+              <div>Organization: <a href="https://www.facebook.com/events/dylans-tavern-grill/wbw-military-veterans-salsabachata-dance-night-out/2047581432009919/">SDSalsaBachata and Veterans who Salsa</a></div>
+              <div>
+                </p> SDSalsaBachata and Veterans who Salsa present "Dance for Vets", a charitable dance social. All proceeds of the ticket sales will go to support organiazations that provide services to homeless veterans. <br>
+                Dance lessons begin at 8:30 pm by Vera from Vedanza Dance Company and Violeta Salsera.  <br>
+                Music by DJ Sonero, one of the best in the scene! <br>
+                $15 presale - $20 at the door <br>
+                Raffles and giveaways! </p>
+              </div>
+          </div>
+          <br>
+          <div class="person">
+              <div>
+                  <b>Event Attendees</b>
+              </div>
+              <div class="container">
+                  <span>April</span>
+                  <span>616-345-6266</span>
+                  <span>april00@gmail.com</span>
+              </div>
+              <div class="container">
+                  <span>Mike</span>
+                  <span>222-345-4562</span>
+                  <span>mike01@gmail.com</span>
+              </div>
+              <div class="container">
+                  <span>Lisa</span>
+                  <span>555-980-4562</span>
+                  <span>lisa002@gmail.com</span>
+              </div>
+              <div class="container">
+                  <span>Amanda</span>
+                  <span>456-234-9763</span>
+                  <span>amanda002@gmail.com</span>
+              </div>
+              <div class="container">
+                  <span>Ellen</span>
+                  <span>334-555-9963</span>
+                  <span>ellen002@gmail.com</span>
+              </div>
+          </div>
+          <br>
+          <div class="person">
+              <div>
+                  <b>Comments</b>
+              </div>
+              <div>
+                  Lisa: Are we going there by bus?
+                  <br>
+                  Ellen: I have a car, and I can pick you guys up.
+                  <br>
+                  Amanda: Hey, Lisa, I took a look at your profile and it says that you were stationed to 32nd Street in 2003? So was I!!!
+                  <br>
+                  Lisa: I was stationed to Port Ops back in 2003! Wow what a small world.
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    </body>
+</html>

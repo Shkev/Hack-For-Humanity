@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="{{ url_for('static', filename='index.css')}}"/>
+      <title>Home Page</title>
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="{{ url_for('index') }}">Home</a>
+      <a href="{{ url_for('events') }}">Events</a>
+      <a href="{{ url_for('resources') }}">Resources</a>
+    </div>
+    <div style="text-align:center">
+      <img src="{{ url_for('static', filename='salute_transparent.png')}}">
+    </div>
+    <br>
+    <br>
+    <div class="row">
+      <div class="column">
+        <div class="container">
+          <a href="{{ url_for('events') }}"><img src="{{ url_for('static', filename='events.jpg')}}"></a>
+          <div class="centered"><h2 style="font-size:50px">Events</h2></div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="container">
+          <a href="{{ url_for('resources') }}"><img src="{{ url_for('static', filename='resources_image.jpg')}}"></a>
+          <div class="centered"><h2 style="font-size:50px;color:white">Resources</h2></div>
+        </div>
+      </div>
+    </div>
+    <div style="padding-left:16px">
+    </div>
+  </body>
+</html>
